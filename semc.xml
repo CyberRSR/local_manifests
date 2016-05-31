@@ -4,10 +4,10 @@
           fetch="https://github.com"
           review="review.msm7x30.org" />
 
-  <project name="LegacyXperia/local_manifests" path="vendor/extra" remote="msm7x30" />
+  <project name="niks255/local_manifests" path="vendor/extra" remote="msm7x30" />
 
   <!-- LegacyXperia projects -->
-  <project name="LegacyXperia/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="msm7x30" />
+  <project name="niks255/android_device_semc_msm7x30-common" path="device/semc/msm7x30-common" remote="msm7x30" />
 
   <project name="LegacyXperia/android_device_semc_mogami-common" path="device/semc/mogami-common" remote="msm7x30" />
   <project name="LegacyXperia/android_device_semc_anzu" path="device/semc/anzu" remote="msm7x30" />
@@ -24,10 +24,38 @@
   <project name="LegacyXperia/android_device_semc_phoenix" path="device/semc/phoenix" remote="msm7x30" />
   <project name="LegacyXperia/android_device_semc_zeus" path="device/semc/zeus" remote="msm7x30" />
 
-  <project name="LegacyXperia/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="msm7x30" />
+  <project name="niks255/android_kernel_semc_msm7x30" path="kernel/semc/msm7x30" remote="msm7x30" />
 
   <project name="LegacyXperia/proprietary_vendor_semc" path="vendor/semc" remote="msm7x30" />
 
   <!-- CyanogenMod projects -->
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" />
+
+  <!-- Do not download these -->
+  <remove-project name="CyanogenMod/android_build" />
+  <remove-project name="CyanogenMod/android_frameworks_av" />
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <remove-project name="CyanogenMod/android_frameworks_native" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
+  <remove-project name="CyanogenMod/android_packages_apps_Settings" />
+  <remove-project name="CyanogenMod/android_packages_apps_SoundRecorder" />
+  <remove-project name="CyanogenMod/android_system_core" />
+  <remove-project name="CyanogenMod/android_vendor_cm" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMFileManager" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMBugreport" />
+  <remove-project name="CyanogenMod/android_packages_apps_LockClock" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoiceDialer" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoicePlus" />
+  <remove-project name="platform/external/svox" />
+  
+  <project path="build" name="CMForks/android_build" groups="pdk" />
+  <project path="frameworks/av" name="CMForks/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="CMForks/android_frameworks_base" />
+  <project path="frameworks/native" name="CMForks/android_frameworks_native" groups="pdk" />
+  <project path="hardware/qcom/display-caf" name="CMForks/android_hardware_qcom_display-caf" groups="caf" />
+  <project path="packages/apps/Settings" name="CMForks/android_packages_apps_Settings" />
+  <project path="packages/apps/SoundRecorder" name="CMForks/android_packages_apps_SoundRecorder" />
+  <project path="system/core" name="CMForks/android_system_core" groups="pdk" />
+  <project path="vendor/cm" name="CMForks/android_vendor_cm" />
 </manifest>
