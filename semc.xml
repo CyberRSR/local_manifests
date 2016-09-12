@@ -58,4 +58,5 @@
   <project path="packages/apps/SoundRecorder" name="CyberRSR/android_packages_apps_SoundRecorder" />
   <project path="system/core" name="CyberRSR/android_system_core" groups="pdk" />
   <project path="vendor/cm" name="CyberRSR/android_vendor_cm" />
+  <project path="bootable/recovery-twrp" name="CyberRSR/android_bootable_recovery" revision="refs/tags/android-7.0" />
 </manifest>
