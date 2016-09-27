@@ -42,9 +42,7 @@
   <remove-project name="CyanogenMod/android_system_core" />
   <remove-project name="CyanogenMod/android_vendor_cm" />
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <remove-project name="CyanogenMod/android_packages_apps_CMFileManager" />
   <remove-project name="CyanogenMod/android_packages_apps_CMBugreport" />
-  <remove-project name="CyanogenMod/android_packages_apps_LockClock" />
   <remove-project name="CyanogenMod/android_packages_apps_VoiceDialer" />
   <remove-project name="CyanogenMod/android_packages_apps_VoicePlus" />
   <remove-project name="platform/external/svox" />
